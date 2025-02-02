@@ -1,0 +1,399 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.header {
+    background: #2c3e50;
+    color: #fff;
+}
+
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.logo-container{
+    display: flex;
+    margin: auto;
+}
+
+.logo{
+    height: 100px;
+    
+}
+.logo1{
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.nav-bar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-bar .menu a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.hero {
+    text-align: center;
+    background: #1e1a1a;
+    padding: 100px 15px;
+    background-image: url(asso.png);
+    background-size: cover;
+    color: #fdfafa;
+}
+
+.hero h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+.btn {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn0{
+    display: inline-block;
+    background: #117a21;
+    color: rgb(242, 238, 238);
+    padding: 0.1rem 1rem;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+.btn1{
+    display: inline-block;
+    background: #117a21;
+    color: rgb(250, 246, 246);
+    padding: 0.1rem 1rem;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+.btn2{
+    display: inline-block;
+    background: #117a21;
+    color: rgb(252, 250, 250);
+    padding: 0.1rem 1rem;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background: #eee;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature .icon {
+    font-size: 40px;
+    color: green;
+}
+  
+.feature h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Style de base pour la section des activités */
+#activities {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#activities h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Conteneur pour les activités */
+.containera {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espace entre les cartes */
+    justify-content: center;
+}
+
+/* Style pour chaque activité */
+.activity {
+    background-color: #2e855e;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 40px); /* Trois cartes par ligne */
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.activity:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Style pour le texte dans chaque activité */
+.activity p {
+    font-size: 1.2em;
+    color: #eee;
+    margin: 0;
+}
+
+/* Responsive design pour les écrans plus petits */
+@media (max-width: 768px) {
+    .activity {
+        width: calc(50% - 20px); /* Deux cartes par ligne */
+    }
+}
+
+@media (max-width: 480px) {
+    .activity {
+        width: 100%; /* Une carte par ligne */
+    }
+}
+section {
+    padding: 2rem;
+}
+
+section h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+
+.containerb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espace entre les cartes */
+    justify-content: center;
+}
+
+#events {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#events h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.event {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 40px); /* Trois cartes par ligne */
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Style pour le titre de l'événement */
+.event h3 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin: 0 0 10px 0;
+}
+
+/* Style pour le texte de l'événement */
+.event p {
+    font-size: 1.3em;
+    color: #420e0e;
+    margin: 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+/* Style de base pour le conteneur */
+.blog.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espace entre les cartes */
+    padding: 20px;
+}
+
+/* Style pour chaque carte */
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 40px); /* Trois cartes par ligne */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Style pour le titre de la carte */
+.post h3 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Style pour le paragraphe de la carte */
+.post p {
+    padding: 15px;
+    margin: 0;
+    color: #555;
+}
+
+/* Style pour le lien dans la carte */
+.post a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #0b1724;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0 0 8px 8px;
+    transition: background-color 0.3s ease;
+}
+
+.post a:hover {
+    background-color: #0a141f;
+}
+
+/* Responsive design pour les écrans plus petits */
+@media (max-width: 768px) {
+    .post {
+        width: calc(50% - 20px); /* Deux cartes par ligne */
+    }
+}
+
+@media (max-width: 480px) {
+    .post {
+        width: 100%; /* Une carte par ligne */
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid green;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-links a img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#newsletter-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#newsletter-form button {
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#newsletter-form button:hover {
+    background-color: darkgreen;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
